@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YOLOv8 Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animate.min.css') }}">
+</head>
+
+<body>
+    <h1 class="animated fadeIn">Prediction Result</h1>
+    <img src="{{ url_for('serve_runs', filename=image_path) }}" alt="Annotated Image" class="animated zoomIn">
+    <br>
+    <a href="/">
+        <button class="animated fadeIn">Back to Home</button>
+    </a>
+</body>
+
+</html>

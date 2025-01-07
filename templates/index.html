@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YOLOv8 Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animate.min.css') }}">
+</head>
+
+<body>
+    <h1 class="animated fadeInDown">YOLOv8 Detection App</h1>
+
+    <form action="/predict_image" method="post" enctype="multipart/form-data" class="animated fadeInUp">
+        <h3>Upload an Image</h3>
+        <input type="file" name="file">
+        <button type="submit" class="animated">Predict</button>
+    </form>
+
+    <h3 class="animated fadeInUp">Live Webcam Detection</h3>
+    <a href="/live_webcam">
+        <button class="animated">Start Webcam</button>
+    </a>
+</body>
+
+</html>
